@@ -2,10 +2,111 @@
 <html>
 <head>
 	<title>.: diprint.in | Dashboard :.</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="container">
+	  <div class="col-sm-2">
+	    <div class="sidenav">
+			<div class="sidenav-top">
+				<a href="#"><img src="pics/logo.png"></a>
+				<a href="#" class="active"><img class="icon" src="pics/pesanan.png">Pesanan</a>
+				<a href="#"><img class="icon" src="pics/antrian.png">Antrian</a>
+				<a href="#"><img class="icon" src="pics/history.png">History</a>
+			</div>
+			<div class="sidenav-bottom">
+				<!-- <hr width="80%"> -->
+				<a href="#"><img class="icon" src="pics/pesanan.png">Profil</a>
+				<a href="#"><img class="icon" src="pics/antrian.png">Logout</a>
+			</div>
+	    </div>
+	  </div>
+	  <div class="main col-sm-12">
+	  	<!-- main adjahdjknad ddkhakjfhaf fjshasfjkfs asfkjhasfkjahf afsjkhasfj  -->
+	    <div class="row title">
+	    	<h1> Mitra Jaya<font color="#006FB6">|Pesanan</font> </h1>
+	    </div>
+	    <div class="row">
+	    	<div class="tab_container">
+				<input id="tab1" type="radio" name="tabs" checked>
+				<label for="tab1"><i class="fa fa-code"></i><span>Baru</span></label>
 
+				<input id="tab2" type="radio" name="tabs">
+				<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>On Process</span></label>
+
+				<input id="tab3" type="radio" name="tabs">
+				<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Ready</span></label>
+
+				<input id="tab4" type="radio" name="tabs">
+				<label for="tab4"><i class="fa fa-folder-open-o"></i><span>Sudah Bayar</span></label>
+
+				<input id="tab5" type="radio" name="tabs">
+				<label for="tab5"><i class="fa fa-envelope-o"></i><span>Dibatalkan</span></label>
+
+				<section id="contentPesanBaru" class="tab-content">
+					<!-- urut berdasarkan -->
+					<div class="row">
+						<h5 class="urut">Urut Berdasarkan</h5>
+						<div class="col-sm-3">
+							<select class="form-control input-sm">
+								<option>Jam</option>
+								<option>Banyak</option>
+							</select>
+						</div>
+					</div>
+					<!-- title list -->
+					<div class="row">
+						<div class="col-sm-3"><h5>Nama</h5></div>
+						<div class="col-sm-3"><h5>Email</h5></div>
+						<div class="col-sm-4"><h5>Keterangan</h5></div>
+						<div class="col-sm-2"><h5>Waktu</h5></div>
+					</div>
+					<hr>
+					<!-- baris pertama -->
+					<div class="row kontenPesan" onclick="#">
+						<div class="col-sm-3"><p>Siti Nurbaya</p></div>
+						<div class="col-sm-3"><p>sitinur@gmail.com</p></div>
+						<div class="col-sm-4"><p>Legal: 2 x 20 lembar</p></div>
+						<div class="col-sm-2"><p>12:00</p></div>
+					</div>
+					<hr>
+					<!-- baris kedua -->
+					<div class="row kontenPesan" onclick="#">
+						<div class="col-sm-3"><p>Wahyu Ade</p></div>
+						<div class="col-sm-3"><p>wahyu@gmail.com</p></div>
+						<div class="col-sm-4"><p>A4: 1 x 10 lembar</p></div>
+						<div class="col-sm-2"><p>11:00</p></div>
+					</div>
+					<hr>
+				</section>
+
+				<section id="contentPesanProses" class="tab-content">
+					<h3>Headline 2</h3>
+			      	<p>Tab 2 content.</p>
+				</section>
+
+				<section id="contentPesanReady" class="tab-content">
+					<h3>Headline 3</h3>
+			      	<p>Tab 3 content</p>
+				</section>
+
+				<section id="contentPesanBayar" class="tab-content">
+					<h3>Headline 4</h3>
+			      	<p>tab 4 Content</p>
+				</section>
+
+				<section id="contentPesanBatal" class="tab-content">
+					<h3>Headline 5</h3>
+			      	<p>Tab 5 Content.</p>
+				</section>
+			</div>
+	  	</div>
+	</div>
+<script src="./bootstrap-4.0.0-alpha.6-dist/js/jquery-3.2.1.min.js"></script>
+<script src="./bootstrap-4.0.0-alpha.6-dist/js/tether.min.js"></script>
+<script src="./bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<!-- <script src="js.js"></script> -->
 </body>
 </html>
 	
