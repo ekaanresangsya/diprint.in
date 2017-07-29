@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>.: diprint.in | Dashboard :.</title>
-	<link rel="stylesheet" type="text/css" href="./bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -46,21 +46,35 @@
 
 				<section id="contentPesanBaru" class="tab-content">
 					<!-- urut berdasarkan -->
-					<div class="row">
-						<h5 class="urut">Urut Berdasarkan</h5>
-						<div class="col-sm-3">
+					<div class="row col-sm-12">
+						<table>
+							<tr>
+								<td valign="middle"><h5 class="urut">Urut Berdasarkan</h5></td>
+								<td>:</td><td>&nbsp;</td>
+								<td>
+									<select class="form-control input-sm">
+										<option>Jam</option>
+										<option>Banyak Halaman</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+						<!-- <div class="col-sm-2">
+							<h5 class="urut">Urut Berdasarkan</h5>
+						</div>
+						<div class="col-sm-4">
 							<select class="form-control input-sm">
 								<option>Jam</option>
 								<option>Banyak Halaman</option>
 							</select>
-						</div>
+						</div> -->
 					</div>
 					<!-- title list -->
 					<div class="row">
-						<div class="col-sm-3"><h5>Nama</h5></div>
-						<div class="col-sm-3"><h5>Email</h5></div>
-						<div class="col-sm-4"><h5>Keterangan</h5></div>
-						<div class="col-sm-2"><h5>Waktu</h5></div>
+						<div class="col-sm-3"><h4>Nama</h4></div>
+						<div class="col-sm-3"><h4>Email</h4></div>
+						<div class="col-sm-4"><h4>Keterangan</h4></div>
+						<div class="col-sm-2"><h4>Waktu</h4></div>
 					</div>
 					<hr>
 					<!-- baris pertama -->

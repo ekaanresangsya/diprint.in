@@ -1,39 +1,23 @@
-$(document).ready(function () {
-    $(".btn-select").each(function (e) {
-        var value = $(this).find("ul li.selected").html();
-        if (value != undefined) {
-            $(this).find(".btn-select-input").val(value);
-            $(this).find(".btn-select-value").html(value);
-        }
-    });
-});
+// var textarea = document.querySelector('textarea');
 
-$(document).on('click', '.btn-select', function (e) {
-    e.preventDefault();
-    var ul = $(this).find("ul");
-    if ($(this).hasClass("active")) {
-        if (ul.find("li").is(e.target)) {
-            var target = $(e.target);
-            target.addClass("selected").siblings().removeClass("selected");
-            var value = target.html();
-            $(this).find(".btn-select-input").val(value);
-            $(this).find(".btn-select-value").html(value);
-        }
-        ul.hide();
-        $(this).removeClass("active");
-    }
-    else {
-        $('.btn-select').not(this).each(function () {
-            $(this).removeClass("active").find("ul").hide();
-        });
-        ul.slideDown(300);
-        $(this).addClass("active");
-    }
-});
+// textarea.addEventListener('keydown', autosize);
+             
+// function autosize(){
+//   var el = this;
+//   setTimeout(function(){
+//     el.style.cssText = 'height:auto; padding:0';
+//     // for box-sizing other than "content-box" use:
+//     // el.style.cssText = '-moz-box-sizing:content-box';
+//     el.style.cssText = 'height:' + el.scrollHeight + 'px';
+//   },0);
+// }
 
-$(document).on('click', function (e) {
-    var target = $(e.target).closest(".btn-select");
-    if (!target.length) {
-        $(".btn-select").removeClass("active").find("ul").hide();
-    }
+
+jQuery.each(jQuery('textarea[data-autoresize]'), function() {
+    var offset = this.offsetHeight - this.clientHeight;
+ 
+    var resizeTextarea = function(el) {
+        jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+    };
+    jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
 });

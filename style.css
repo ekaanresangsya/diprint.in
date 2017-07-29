@@ -141,12 +141,12 @@ body {
 
 
 .main{
-  padding-left: 20%;
+  padding-left: 22%;
   padding-right: 0px;
 }
 
 .title {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 
@@ -219,19 +219,25 @@ label {
 }
 
 .tab_container .tab-content p,
-.tab_container .tab-content h5 {
+.tab_container .tab-content h4 {
   -webkit-animation: fadeInScale 0.7s ease-in-out;
   -moz-animation: fadeInScale 0.7s ease-in-out;
   animation: fadeInScale 0.7s ease-in-out;
 }
-.tab_container .tab-content h5  {
+.tab_container .tab-content h4  {
   color: #006FB6;
+
 }
 
 .tab_container .tab-content .urut  {
   color: #757575;
-  padding-top: 8px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.tab_container .tab-content hr  {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tab_container [id^="tab"]:checked + label {
@@ -291,3 +297,154 @@ label .fa {
 }
 
 /*end cards tabs*/
+
+hr.style1{
+  border-top: 1px solid #8c8b8b;
+}
+
+
+button.info {
+  width: 160px;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+}
+
+/*chat*/
+.infoField {
+  height: 20%;
+}
+
+.chatField {
+  height: 330px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.inputField {
+  position: fixed;
+  bottom: 10px;
+  width: 75%;
+}
+
+.inputField .form-control {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+}
+
+
+#inputChat {
+  font: normal 18px/normal "Coda", Helvetica, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(252,252,252,1);
+}
+
+#inputChat:hover {
+  background: rgba(232,249,255,1); 
+}
+
+
+button.send {
+  border-radius: 20%;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+}
+
+.chatMasuk {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 2;
+  position: relative;
+  width: 250px;
+  padding: 20px;
+  border: none;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  font: normal 16px/2 "Abel", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #0199d9;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.chatMasuk::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 1;
+  width: 22px;
+  height: 18px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border: none;
+  -webkit-border-radius: 0 47px 0 0;
+  border-radius: 0 47px 0 0;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,0,0,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  text-shadow: none;
+  -webkit-transform: rotateZ(-14.32394487827058deg)  translateX(-5px) skewX(-36deg);
+  transform: rotateZ(-14.32394487827058deg)  translateX(-5px) skewX(-36deg);
+}
+
+.chatKeluar {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 2;
+  position: relative;
+  width: 250px;
+  left: 550px;
+  right: 0;
+  padding: 20px;
+  border: none;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  font: normal 16px/2 "Abel", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #9b9b9b;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.chatKeluar::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  border: none;
+  -webkit-border-radius: 0 51px 0 0;
+  border-radius: 0 51px 0 0;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,0,0,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #9b9b9b;
+  text-shadow: none;
+  -webkit-transform: rotateZ(-104.27831871380982deg)  translateX(-5px) skewX(-36deg);
+  transform: rotateZ(-104.27831871380982deg)  translateX(-5px) skewX(-36deg);
+}
+
+
+/*end chat*/
