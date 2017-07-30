@@ -11,7 +11,7 @@
 	    <div class="sidenav">
 			<div class="sidenav-top">
 				<a href="#"><img src="pics/logo.png"></a>
-				<a href="#" class="active"><img class="icon" src="pics/pesanan.png">Pesanan</a>
+				<a href="pesanan.html" class="active"><img class="icon" src="pics/pesanan.png">Pesanan</a>
 				<a href="#"><img class="icon" src="pics/antrian.png">Antrian</a>
 				<a href="#"><img class="icon" src="pics/history.png">History</a>
 			</div>
@@ -78,15 +78,15 @@
 					</div>
 					<hr>
 					<!-- baris pertama -->
-					<div class="row kontenPesan" onclick="#">
-						<div class="col-sm-3"><p>Siti Nurbaya</p></div>
+					<div class="row" data-toggle="modal" data-target="#myModal" style="cursor: pointer;">
+						<div class="col-sm-3"><p >Siti Nurbaya</p></div>
 						<div class="col-sm-3"><p>sitinur@gmail.com</p></div>
 						<div class="col-sm-4"><p>Legal: 2 x 20 lembar</p></div>
 						<div class="col-sm-2"><p>12:00</p></div>
 					</div>
 					<hr>
 					<!-- baris kedua -->
-					<div class="row kontenPesan" onclick="#">
+					<div class="row" style="cursor: pointer;">
 						<div class="col-sm-3"><p>Wahyu Ade</p></div>
 						<div class="col-sm-3"><p>wahyu@gmail.com</p></div>
 						<div class="col-sm-4"><p>A4: 1 x 10 lembar</p></div>
@@ -116,11 +116,89 @@
 				</section>
 			</div>
 	  	</div>
+	  </div>
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <div class="row">
+		          <div class="col-sm-8">
+		          	<h2 class="modal-title" style="color: #006FB6">Siti Nurbaya</h2>
+		          	<p class="modal-title">sitinur@gmail.com</p>
+		    	  </div>
+		          <div class="col-sm-4">
+		    		<p style="color: #e91e63;">15 Juni 2017, 12.00 WIB</p>
+		    	  </div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-sm-5">
+		  			<table>
+		  				<tr>
+		  					<td>Ukuran kertas</td>
+		  					<td>:&nbsp;</td>
+		  					<td>Legal</td>
+		  				</tr>
+		  				<tr>
+		  					<td>Copy</td>
+		  					<td>:&nbsp;</td>
+		  					<td>2 x 20 halaman</td>
+		  				</tr>
+		  				<tr>
+		  					<td>Estimasi biaya</td>
+		  					<td>:&nbsp;</td>
+		  					<td style="color: #e91e63; font-weight: bold;">12.000</td>
+		  				</tr>
+		  			</table>
+		  		</div>
+		  		<div class="col-sm-7">
+		  			<div class="row">
+		  				<button class="btn btn-success info"><span class="glyphicon glyphicon-download-alt"></span>&nbsp; UNDUH FILE</button> &nbsp;
+		  				<button class="btn btn-warning info"><span class="glyphicon glyphicon-arrow-right"></span>&nbsp; PROSES</button>
+		  			</div>
+		  		</div>
+			      </div>
+	        </div>
+	        <div class="modal-body">
+	          	<div class="row chatField">
+			  		<div class="col-sm-12">
+			  			<p class="chatMasuk">Siap Terima kasih mas adjahdjahd afjahfkaf afkjahfkaf afkjahfaf </p>
+			  			<p class="chatKeluar">Siap Terima kasih mas</p>
+			  			<p class="chatMasuk">Siap Terima kasih mas</p>
+			  			<p class="chatKeluar">Siap Terima kasih mas</p>
+			  			<p class="chatKeluar">Siap Terima kasih mas</p>
+
+			  		</div>
+			  	</div>
+	        </div>
+	        <div class="modal-footer">
+	          	<div class="row">
+			  		<div class="col-sm-10">
+			  			<div class="form-group">
+					  		<label for="inputChat" class="sr-only">Text</label>
+							<!-- <input class="form-control" type="text" placeholder="Tulis pesan...." id="inputChat"> -->
+							<textarea id="inputChat" class="form-control" data-autoresize rows="1" placeholder='Tulis pesan...'></textarea>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-2">
+			  		<div class="form-group">
+			  			<button class="btn btn-info send" id="btnKirimChat"><span class="glyphicon glyphicon-ok"></span> Kirim</button>
+			  		</div>
+			  		</div>
+			  	</div>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
 	</div>
-<script src="./bootstrap-4.0.0-alpha.6-dist/js/jquery-3.2.1.min.js"></script>
-<script src="./bootstrap-4.0.0-alpha.6-dist/js/tether.min.js"></script>
-<script src="./bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-<!-- <script src="js.js"></script> -->
+<script src="./bootstrap-3.3.7/dist/js/jquery-3.2.1.min.js"></script>
+<script src="./bootstrap-3.3.7/dist/js/tether.min.js"></script>
+<script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="js.js"></script>
 </body>
 </html>
 	

@@ -296,6 +296,10 @@ label .fa {
   padding: 0;
 }
 
+.kontenPesan {
+  cursor: pointer;
+}
+
 /*end cards tabs*/
 
 hr.style1{
@@ -304,7 +308,7 @@ hr.style1{
 
 
 button.info {
-  width: 160px;
+  width: 130px;
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
   box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
 }
@@ -351,7 +355,7 @@ textarea {
 
 
 button.send {
-  border-radius: 20%;
+  border-radius: 10%;
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
   box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
 }
@@ -407,7 +411,7 @@ button.send {
   z-index: 2;
   position: relative;
   width: 250px;
-  left: 550px;
+  left: 270px;
   right: 0;
   padding: 20px;
   border: none;
